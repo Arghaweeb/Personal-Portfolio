@@ -7,7 +7,7 @@ import { aboutData, aboutText, downloadIcon, arrowLeftIcon } from '@/assets'
 
 const About = () => {
   return (
-    <div id="about" className="min-h-screen flex flex-col items-center justify-start py-20">
+    <div id="about" className="min-h-screen py-20 px-96">
       <Heading text={'About Me'} />
       <div className="w-full flex items-center justify-center gap-8 md:justify-center mt-16">
         <Image

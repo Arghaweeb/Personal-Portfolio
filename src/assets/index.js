@@ -105,77 +105,37 @@ export const experienceData = [
 // Skills
 export const skillsData = [
   {
-    name: 'Figma',
-    icon: '/skills/figma.png',
+    title: 'Programming Languages',
+    description: '(C, C++, JavaScript, TypeScript, Python, R, SQL)'
   },
   {
-    name: 'Photoshop',
-    icon: '/skills/photoshop.png',
+    title: 'Web Design & Development',
+    description: '(HTML, CSS, Tailwind CSS, JavaScript, TypeScript)'
   },
   {
-    name: 'Blender',
-    icon: '/skills/blender.png',
+    title: 'Frontend JavaScript Frameworks',
+    description: '(React, Next, Vite)'
   },
   {
-    name: 'VS Code',
-    icon: '/skills/vscode.png',
+    title: 'Backend Frameworks',
+    description: '(Node.js, Express.js, Python)'
   },
   {
-    name: 'HTML',
-    icon: '/skills/html.png',
+    title: 'Database Management System',
+    description: '(MongoDB, Mongoose, Prisma ORM, Postgres)'
   },
   {
-    name: 'CSS',
-    icon: '/skills/css.png',
+    title: 'Artificial Intelligence & Machine Learning',
+    description: '(PyTorch, Tensorflow, Keras, OpenCV, OpenAI, LangChain, Hugging Face, YOLO)'
   },
   {
-    name: 'JavaScript',
-    icon: '/skills/js.png',
+    title: 'DevOps & Version Control',
+    description: '(Docker, AWS, Google Cloud, Git, GitHub)'
   },
   {
-    name: 'TailwindCSS',
-    icon: '/skills/tailwind.png',
-  },
-  {
-    name: 'Vite',
-    icon: '/skills/vite.png',
-  },
-  {
-    name: 'ReactJS',
-    icon: '/skills/react.png',
-  },
-  {
-    name: 'TypeScript',
-    icon: '/skills/ts.png',
-  },
-  {
-    name: 'AI',
-    icon: '/skills/ai.png',
-  },
-  {
-    name: 'Framer Motion',
-    icon: '/skills/framer.png',
-  },
-  {
-    name: 'ThreeJS',
-    icon: '/skills/threejs.png',
-  },
-  {
-    name: 'NextJS',
-    icon: '/skills/nextjs.png',
-  },
-  {
-    name: 'NodeJS',
-    icon: '/skills/nodejs.png',
-  },
-  {
-    name: 'MongoDB',
-    icon: '/skills/mongodb.png',
-  },
-  {
-    name: 'Github',
-    icon: '/skills/github.png',
-  },
+    title: 'Miscellaneous',
+    description: '(LaTeX, Canva, SmartPLS, Adobe Premiere Pro, Adobe After Effects, Adobe Photoshop)'
+  }
 ]
 
 // Reviews
