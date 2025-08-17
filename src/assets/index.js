@@ -245,55 +245,7 @@ export const projectsButton = [
   'Research & Development'
 ]
 
-// Pricing Plans
-export const pricingPlans = [
-  {
-    title: 'Basic',
-    pricing: '$500 - $1,000',
-    features: [
-      'Up to 5 pages',
-      'Responsive design ',
-      'Basic SEO ',
-      'Contact form',
-      'Social media links',
-      '1 month support',
-    ],
-    recommended: 'Small businesses, personal websites, bloggers',
-  },
-  {
-    title: 'Premium',
-    pricing: '$5,000 - $10,000',
-    features: [
-      'Unlimited pages',
-      'Responsive design',
-      'Comprehensive SEO',
-      'Contact form ',
-      'Social media links',
-      'Advanced security',
-      'E-commerce (unlimited products)',
-      'Blog setup',
-      'Google Analytics with custom reports',
-      '6 months support',
-    ],
-    recommended: 'Medium-sized businesses, online stores, service providers',
-  },
-  {
-    title: 'Standard',
-    pricing: '$1,500 - $3,000',
-    features: [
-      'Up to 10 pages',
-      'Responsive design',
-      'Advanced SEO',
-      'CContact form',
-      'Social media links',
-      'E-commerce (20 products)',
-      'Blog setup',
-      'Google Analytics',
-      '3 months support',
-    ],
-    recommended: 'Large businesses, complex e-commerce sites, custom web applications',
-  },
-]
+
 
 import CheckLineIcon from 'remixicon-react/CheckLineIcon'
 
@@ -302,9 +254,9 @@ export const checkIcon = <CheckLineIcon />
 // Q & A
 export const questions = [
   {
-    question: 'How much do you charge for a website?',
+    question: 'Baden Wurttemberg Stiftung 2024',
     answer:
-      'Our website packages usually range from £2997 – £4997. However it really depends on what kind of website you need. We recently wrote a full guide on how much it costs for a website to give you an idea of the different options available.',
+      '  The Baden-Württemberg-Stiftung hereby confirms that the following person is awarded a Baden-Württemberg-STIPENDIUM for University Students. The Baden-Württemberg Stiftung is an independent and non-partisan foundation owned by the state of Baden-Württemberg. It is particularly committed to the people of Baden-Württemberg: www.bwstiftung.de',
   },
   {
     question: 'Why are you so expensive?',
@@ -322,35 +274,11 @@ export const questions = [
       'Before we begin working together, we’ll usually have an initially chat on the phone or via Skype to discuss the project. Once we get started, most of the communication will take place over email. This makes the process a lot easier as we’ll have all of the information saved and can come back to it later. Once we’ve finished the project, we will book in your 1hr digital marketing training session.',
   },
   {
-    question: 'What will you need from me?',
-    answer:
-      'It really depends on what type of website you want. We’ll be able to discuss this on our discovery call before we start working together. Depending on which package we agree on we could need…',
-  },
-  {
-    question: 'What if I don’t like the website?',
-    answer:
-      'You’re in luck. We offer a risk-free guarantee. Before we build your new website, we’ll design a mockup of your homepage. We’ll design a layout in Photoshop first, that way you’ll get to see our initial designs within approximately ten days. This is your opportunity to give us feedback and if you really don’t like it, you don’t have to move forward. Best part is, this won’t cost you anything.',
-  },
-  {
-    question: 'Do you offer a payment schedule?',
-    answer:
-      'Yes, we split the payment into two. The first 50% is usually taken once you have seen the mockup of your homepage and you’re happy to move forward. The following 50% is taken 30 days after this.',
-  },
-  {
-    question: 'Can I make the final payment when the site is ready to go live?',
-    answer:
-      'No. In the past we have found that projects can take a lot longer than expected to complete. We might be waiting for information from you and this can delay the process. Sometimes these delays can take months. This is why we always invoice 30 days after the original payment. At this point we’ll be well on our way with your new website and you’ll be able to see the progress.',
-  },
-  {
     question: 'Who hosts the website?',
     answer:
       'If we build your website, we will generally manage the hosting for you so you don’t need to do anything. We use the same hosting company for our own website and for ALL our clients. Each website is managed individually to avoid any security issues. Every website we build has unlimited bandwidth, 20GB of disk space, 2GB Ram and 99.9% uptime. We’ve used the same company for 5 years and we don’t plan on changing this anytime soon.',
   },
-  {
-    question: 'Can I update the website myself once it’s been built?',
-    answer:
-      'Yes. We like to offer the ability for our clients to update the website themselves. We we’ll give you all the training and tools to be able to make website amendments. We use a easy to use platform called WordPress so you can add edit and delete content without paying us to do it for you.',
-  },
+ 
   {
     question: 'What if I don’t want to manage the website at all. Can you do it all for me?',
     answer:
