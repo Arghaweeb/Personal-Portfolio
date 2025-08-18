@@ -327,7 +327,7 @@ export const navbarData = [
   },
   {
     id: 'reviews',
-    name: 'Reviews',
+    name: 'LOR',
     icon: <UserStarLineIcon />,
   },
   {
@@ -335,21 +335,18 @@ export const navbarData = [
     name: 'Projects',
     icon: <ProjectorLineIcon />,
   },
-  {
-    id: 'pricing',
-    name: 'Pricing',
-    icon: <PriceTag3LineIcon />,
+
+   {
+    id: 'questions',
+    name: 'Awards',
+    icon: <QuestionAnswerLineIcon />,
   },
+  
   {
     id: 'contact',
     name: 'Contact',
     icon: <ContactsBook2LineIcon />,
-  },
-  {
-    id: 'questions',
-    name: 'Questions',
-    icon: <QuestionAnswerLineIcon />,
-  },
+  }
 ]
 
 // Toggle

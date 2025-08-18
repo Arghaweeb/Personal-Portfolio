@@ -24,7 +24,7 @@ const Experience = () => {
         alt={'Experience Image'}
         width={400}
         height={400}
-        className="absolute -top-4 right-0 opacity-70 lg:hidden"
+        className="absolute -top-4 right-20 opacity-70 lg:hidden"
       />
       <div
         ref={containerRef}
