@@ -7,9 +7,9 @@ import { animate, motion } from "framer-motion";
 
 const Projects = () => {
   const [tech, setTech] = useState("All");
-  const [index, setIndex] = useState(0); // use to update the active button
+  const [index, setIndex] = useState(0);
   const prevIndex = useRef(0);
-  const buttonsRef = useRef([]); // keep track of the index of the previously active button
+  const buttonsRef = useRef([]);
 
   const handleClick = () => {
     animate(buttonsRef.current[prevIndex.current], { opacity: 0.5, scale: 1 });
@@ -20,10 +20,11 @@ const Projects = () => {
     handleClick();
     prevIndex.current = index;
   }, [index]);
+
   return (
-    <div id="projects" className="min-h-screen py-20 px-96">
+    <div id="projects" className="min-h-screen py-20 px-96 lg:px-20 md:px-10 sm:px-5">
       <Heading text={"Projects"} />
-      <div className="flex flex-wrap items-center justify-between gap-4 py-10">
+      <div className="flex flex-wrap items-center justify-start lg:justify-center gap-3 py-10">
         {projectsButton.map((text, i) => (
           <motion.button
             key={i}
@@ -33,7 +34,7 @@ const Projects = () => {
               setTech(text);
               setIndex(i);
             }}
-            className="border border-yellow-500 rounded-xl px-2 py-1 text-sm font-light tracking-wider text-gray-400"
+            className="border border-yellow-500 rounded-xl px-3 py-1.5 text-sm font-light tracking-wider text-gray-600 dark:text-gray-300 hover:bg-yellow-500 hover:text-white transition-all"
           >
             {text}
           </motion.button>
@@ -42,7 +43,7 @@ const Projects = () => {
       <div className="flex flex-wrap items-center justify-center gap-5">
         {projectsData
           .filter((project) => {
-            return project.tech.some((item) => // some - This method checks if atleast one element in an array satisfies the provided testing function
+            return project.tech.some((item) =>
               tech === "All" ? true : item === tech
             );
           })

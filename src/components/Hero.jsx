@@ -1,34 +1,40 @@
-'use client'
-import Image from 'next/image'
-import { heroIcons } from '@/assets'
-import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion'
-import { useState } from 'react'
+"use client";
+import Image from "next/image";
+import { heroIcons } from "@/assets";
+import { useMotionValue, useTransform, motion, useSpring } from "framer-motion";
+import { useState } from "react";
 
 const Hero = () => {
-  const [windowOffset, setWindowOffset] = useState({ innerWidth: 0, innerHeight: 0 })
-  const [mouseMove, setMouseMove] = useState(false)
-  const [buttonHover, setButtonHover] = useState(false)
-  const x = useMotionValue(0)
-  const y = useMotionValue(0)
+  const [windowOffset, setWindowOffset] = useState({
+    innerWidth: 0,
+    innerHeight: 0,
+  });
+  const [mouseMove, setMouseMove] = useState(false);
+  const [buttonHover, setButtonHover] = useState(false);
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
 
   const handleMouseMove = (e) => {
-    const { clientX, clientY } = e
-    x.set(clientX)
-    y.set(clientY)
-  }
+    const { clientX, clientY } = e;
+    x.set(clientX);
+    y.set(clientY);
+  };
 
   const handleMouseEnter = () => {
-    setWindowOffset({ innerWidth: window.innerWidth, innerHeight: window.innerHeight })
-    setMouseMove(true)
-  }
+    setWindowOffset({
+      innerWidth: window.innerWidth,
+      innerHeight: window.innerHeight,
+    });
+    setMouseMove(true);
+  };
 
-  const { innerWidth, innerHeight } = windowOffset
+  const { innerWidth, innerHeight } = windowOffset;
 
-  const xSpring = useSpring(x, { stiffness: 100, damping: 10 })
-  const ySpring = useSpring(y, { stiffness: 100, damping: 10 })
+  const xSpring = useSpring(x, { stiffness: 100, damping: 10 });
+  const ySpring = useSpring(y, { stiffness: 100, damping: 10 });
 
-  const rotateY = useTransform(xSpring, [0, innerWidth], [-30, 30])
-  const rotateX = useTransform(ySpring, [0, innerHeight], [10, -50])
+  const rotateY = useTransform(xSpring, [0, innerWidth], [-30, 30]);
+  const rotateX = useTransform(ySpring, [0, innerHeight], [10, -50]);
 
   return (
     <div
@@ -49,11 +55,11 @@ const Hero = () => {
             style={{
               rotateX: mouseMove ? rotateX : 0,
               rotateY: mouseMove ? rotateY : 0,
-              transition: '0.1s',
+              transition: "0.1s",
             }}
           >
             <Image
-              src={'/person.png'}
+              src={"/person.png"}
               alt="Person Image"
               width={400}
               height={400}
@@ -86,13 +92,16 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
-          {heroIcons.map((icon, i) => (
+          {heroIcons.map((item) => (
             <a
-              href="#"
-              key={i}
-              className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={item.label}
+              aria-label={item.label}
+              className="rounded-lg p-2 hover:bg-red-400 hover:text-white transition-all duration-200 hover:scale-110"
             >
-              {icon}
+              {item.icon}
             </a>
           ))}
         </motion.div>
@@ -100,7 +109,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.7 }}
-          href="#"
+          href="#contact"
           className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
           onMouseEnter={() => setButtonHover(true)}
           onMouseLeave={() => setButtonHover(false)}
@@ -109,7 +118,7 @@ const Hero = () => {
         </motion.a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
