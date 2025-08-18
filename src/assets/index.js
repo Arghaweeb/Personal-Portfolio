@@ -255,35 +255,22 @@ export const checkIcon = <CheckLineIcon />
 export const questions = [
   {
     question: 'Baden Wurttemberg Stiftung 2024',
-    answer:
-      '  The Baden-Württemberg-Stiftung hereby confirms that the following person is awarded a Baden-Württemberg-STIPENDIUM for University Students. The Baden-Württemberg Stiftung is an independent and non-partisan foundation owned by the state of Baden-Württemberg. It is particularly committed to the people of Baden-Württemberg: www.bwstiftung.de',
+    answer: 'Awarded for excellence in cross-national research exchange between India and Germany.',
+    certificateLink: '/certificates/BadenWurttembergAwardArg.pdf',
+    hasLink: true
   },
   {
-    question: 'Why are you so expensive?',
-    answer:
-      'he process we use to build your website takes a certain amount of time and a lot of planning and research. Unlike other agencies, we DON’T use templates. We build your website from scratch, which means you get a unique design tailored around your business. Buying a website from us should not just simply be seen as a business expense as your website is a sales tool that should earn you money',
+    question: 'IIT KGP Foundation Scholarship, USA (2024)',
+    answer: 'Awarded for academic excellence and research contributions at IIT Kharagpur',
+    certificateLink: '/certificates/IITKGPF_ARG.pdf', // Add your PDF path
+    hasLink: true
   },
   {
-    question: 'How long does it take to build a website?',
-    answer:
-      'It takes approximately 6-10 weeks to build a website from start to finish, providing we have all the information from you. Our full web design process is broken down here. Generally speaking, the website will only take a long time if we are still waiting for text and images from yourself.',
-  },
-  {
-    question: 'How do we communicate throughout the website build?',
-    answer:
-      'Before we begin working together, we’ll usually have an initially chat on the phone or via Skype to discuss the project. Once we get started, most of the communication will take place over email. This makes the process a lot easier as we’ll have all of the information saved and can come back to it later. Once we’ve finished the project, we will book in your 1hr digital marketing training session.',
-  },
-  {
-    question: 'Who hosts the website?',
-    answer:
-      'If we build your website, we will generally manage the hosting for you so you don’t need to do anything. We use the same hosting company for our own website and for ALL our clients. Each website is managed individually to avoid any security issues. Every website we build has unlimited bandwidth, 20GB of disk space, 2GB Ram and 99.9% uptime. We’ve used the same company for 5 years and we don’t plan on changing this anytime soon.',
-  },
- 
-  {
-    question: 'What if I don’t want to manage the website at all. Can you do it all for me?',
-    answer:
-      'Yes, we can arrange a maintenance package to suit your needs. This can range from 1hr per month to 10 hours per month and we can discuss a package that’s right for you.',
-  },
+    question: '1st Place – Annual Chemical Engineering Competition (2025)',
+    answer: 'Represented IIT Kharagpur at the Calcutta Regional Centre, IIChE Quiz Competition (Jadavpur University); won after 4 technical rounds, a rapid-fire, and a tie-breaker among 30 teams from different colleges all over India.',
+    certificateLink: '/certificates/Certificate_Arghadeep.pdf', // Add your PDF path
+    hasLink: true
+  }
 ]
 
 import ArrowDropDownLineIcon from 'remixicon-react/ArrowDropDownLineIcon'
