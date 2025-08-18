@@ -59,10 +59,10 @@ const Hero = () => {
             }}
           >
             <Image
-              src={"/person.png"}
+              src={"/Picture3.png"}
               alt="Person Image"
-              width={400}
-              height={400}
+              width={1200}
+              height={1200}
               priority={true} // allows some images to load faster
               className="h-auto w-[150px]"
             />
